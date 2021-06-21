@@ -6,10 +6,7 @@ import './Home.css'
 const Home = () => {
     const [data,setData]=useState(homeData)
 
-    const handleData=(data)=>{
-        console.log(data)
-    }
-    //console.log(data)
+   
     return (
         <section className="home">
 
@@ -31,7 +28,7 @@ const Home = () => {
                    
                     {
                         data.map(data=>{
-                            return <HomeImage handleData={handleData} key={data.id} data= {data}/>
+                            return <HomeImage  key={data.id} data= {data}/>
                         })
                     }
                     </div>

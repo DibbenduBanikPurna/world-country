@@ -1,9 +1,15 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { userContext } from '../../App';
 import './Booking.css'
 const Booking = () => {
-    const {name}=useParams();
+    
 
+    const date=new Date().toLocaleDateString();
+    console.log(date)
+    
+    const [tourData,setTourData]=useContext(userContext)
+    //console.log(tourData)
     const [formdata,setFormData]=useState({})
 
     const handleSubmit=(e)=>{
@@ -18,7 +24,9 @@ const Booking = () => {
     return (
         <section className="book">
         <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 text-light mt-5 pt-5">
+                <h2>{tourData.name}</h2>
+                <p>{tourData.description}</p>
 
             </div>
             <div className="col-md-6 mt-5 pt-5">
@@ -29,11 +37,11 @@ const Booking = () => {
                           
                            <label  htmlFor="destination">Destination</label>
                            
-                           <input onFocus={handleChange} className="form-control" type="text" placeholder="Enter Destination"/>
+                           <input defaultValue={tourData.name} onFocus={handleChange} className="form-control" type="text" placeholder="Enter Destination"/>
                          
                            <label>From</label>
 
-                           <input  name="from" onFocus={handleChange} required className="form-control" type="calender" />
+                           <input defaultValue={date}  name="from" onFocus={handleChange} required className="form-control" type="calender" />
                           
                            <label>To</label>
                          
