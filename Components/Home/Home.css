@@ -1,0 +1,13 @@
+.home{
+    background-image: url('../../Images//hom.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+.but{
+    border-radius: 8px;
+    border:4px solid yellow
+}
+.buts img{
+    height: 300px;
+}
