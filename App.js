@@ -10,7 +10,7 @@ import Contact from './Components/Contact/Contact';
 import About from './Components/About/About';
 import Booking from './Components/Booking/Booking';
 import Home from './Components/Home/Home'
-
+import Hotel from './Components/Hotel/Hotel';
 export const userContext=createContext();
 const App = () => {
   const [tourData,setTourData]=useState({})
@@ -34,6 +34,10 @@ const App = () => {
           </Route>
           <Route path='/booking/:name'>
             <Booking/>
+
+          </Route>
+          <Route path='/hotel/:id'>
+            <Hotel/>
           </Route>
           </userContext.Provider>
         </Switch>

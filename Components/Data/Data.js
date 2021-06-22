@@ -4,28 +4,32 @@ export const hotelData = [
         name: "Hotel Shuktara",
         description: " Hotel Shuktara offers accommodation with a restaurant, free private parking, a fitness centre and a shared lounge. With free WiFi, this 3-star hotel offers an ATM and a concierge service.",
         rating: "7.7",
-        price: "2,431/night"
+        price: "2,431/night",
+        pic:'suktara.jpg'
     },
     {
         id: 2,
-        name: "Pan Pacific Sonargaon Dhaka",
+        name: "Pan Pacific Sonargaon",
         description: "Pan Pacific Sonargaon Dhaka is centrally located close to Gulshan and the Embassy districts, just 14 km from the International Airport. Pan Pacific Sonargaon Dhaka is located in the city Center.",
         rating: "7.7",
-        price: "6,522/night"
+        price: "6,522/night",
+        pic:'Hotel Shuktara.jpg'
     },
     {
         id: 3,
         name: "Hotel the Rahamania International",
         description: "Hotel the Rahamania International offers 3-star accommodation with private balconies. Among the facilities of this property are a restaurant, a 24-hour front desk and room service, along with free WiFi throughout the property.",
         rating: "7.7",
-        price: "2,744/night"
+        price: "2,744/night",
+        pic:'Pan Pacific Sonargaon Dhaka.jpg'
     },
     {
         id: 4,
-        name: "Hotel Shalimar Int'l Dhaka",
+        name: "Hotel Shalimar ",
         description: "Hotel Shalimar Int'l Dhaka is set in Dhaka, 3.1 km from Stamford University Bangladesh and 3.7 km from Supreme Court of Bangladesh. Among the facilities of this property are a restaurant, a 24-hour front desk and room service, along with free WiFi throughout the property.",
         rating: "7.7",
-        price: "828/night"
+        price: "828/night",
+        pic:'Hotel the Rahamania International.jpg'
     }
 ]
 

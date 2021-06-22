@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams,Link } from 'react-router-dom';
 import { userContext } from '../../App';
 import './Booking.css'
 const Booking = () => {
@@ -9,7 +9,7 @@ const Booking = () => {
     console.log(date)
     
     const [tourData,setTourData]=useContext(userContext)
-    //console.log(tourData)
+    console.log(tourData)
     const [formdata,setFormData]=useState({})
 
     const handleSubmit=(e)=>{
@@ -47,7 +47,11 @@ const Booking = () => {
                          
                            <input name="to" onFocus={handleChange} required className="form-control" type="date"  />
                             <br/>
+                            <Link to={`/hotel/${tourData.id}`}>
+
+                           
                            <button  className="btn btn-warning form-control">Start Booking</button>
+                           </Link>
                        </form>
             </div>
         </div>
